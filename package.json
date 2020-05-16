@@ -4,6 +4,7 @@
   "author": "wadakenji",
   "license": "MIT",
   "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
     "apollo-boost": "^0.4.9",
     "graphql": "^15.0.0",
     "graphql-tag": "^2.10.3",
