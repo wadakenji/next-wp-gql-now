@@ -4,9 +4,10 @@ import Link from "next/link"
 const Header = () => {
   return (
     <header>
-      <Link href={'/'}>Top</Link>
-      <Link href={'/author'}>Authors</Link>
-      <Link href={'/category'}>Categories</Link>
+      <Link href={'/'}><a>Top</a></Link>
+      <Link href={'/author'}><a>Authors</a></Link>
+      <Link href={'/category'}><a>Categories</a></Link>
+      <Link href={'/preview'}><a>Preview</a></Link>
     </header>
   )
 }
