@@ -18,7 +18,7 @@ const PostList = ({posts}) => {
             </a>
           </Link>
           {p.node.categories.edges.map(c => (
-            <Link href={'/category/' + c.node.categoryId}>
+            <Link href={'/category/' + c.node.categoryId} key={c.node.categoryId}>
               <a>
                 <div>{c.node.name}</div>
               </a>

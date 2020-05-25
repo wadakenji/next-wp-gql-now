@@ -2,9 +2,7 @@ import React from 'react'
 import {useRouter} from 'next/router'
 import gql from "graphql-tag"
 import {useQuery} from '@apollo/react-hooks'
-import Link from "next/link"
 import Post from "../../components/Post"
-
 
 const query = gql`
     query GET_POST(
@@ -12,7 +10,7 @@ const query = gql`
     ) {
         post(idType: DATABASE_ID, id: $id) {
             author {
-                id
+                userId
                 name
             }
             categories {
@@ -38,7 +36,7 @@ const PostPage = () => {
   const {loading, error, data} = useQuery(query, {
     variables: {
       id
-    }
+    },
   })
 
   if (loading) return <p>Loading...</p>

@@ -7,7 +7,6 @@ const Header = () => {
       <Link href={'/'}><a>Top</a></Link>
       <Link href={'/author'}><a>Authors</a></Link>
       <Link href={'/category'}><a>Categories</a></Link>
-      <Link href={'/preview'}><a>Preview</a></Link>
     </header>
   )
 }
