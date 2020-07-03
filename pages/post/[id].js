@@ -40,7 +40,9 @@ const PostPage = () => {
   })
 
   if (loading) return <p>Loading...</p>
-  if (error) return <p>GraphQL Error!</p>
+  if (error) {
+    return (<p>GraphQL Error!</p>)
+  }
 
   return (
     <>
